@@ -1,0 +1,29 @@
+service: aws-node-rest-api-typescript
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  environment:
+    NODE_ENV: dev
+
+plugins:
+  - serverless-plugin-typescript 
+  - serverless-offline
+
+package:
+  exclude:
+    - config/.env.stg
+    - config/.env.pro
+  include:
+    - config/.env.dev
+
+functions:
+
+  getCountyData:
+    handler: app/handler.getCountyData
+    environment:
+      ADDITIONAL_IDENTIFIER_REGIONS: "Asia Europe"
+    events:
+      - http:
+          path: getCountyData
+          method: get        

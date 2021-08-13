@@ -25,8 +25,10 @@ Same approach is applied to backend API endpoint getCountyData. Firstly country 
 External REST Countries API root URL is stored on serverless.yml as environment variable REST_COUNTRIES. Id generation region scope is stored as ADDITIONAL_IDENTIFIER_REGIONS environment variable on same file.
 
 Unit tests are covering most of the code, current package.json runs 'npm test' with nyc to display coverages.
+I didn't add integration tests, current unit test suite external dependencies are all mocked.
 
-Response is a simple JSON object with a status code and stringfied body. It retursn 400 for invalid inputs/bad reuqests, 200 for successful requests. 
+
+Response is a simple JSON object with a status code and stringfied body. Countries API's country specific information is grouped under employeeCountry object. Optional generated ID is returned with generatedIdentifier.
 
 ```json
 {
@@ -108,7 +110,7 @@ Response is a simple JSON object with a status code and stringfied body. It retu
                   "UTC+05:30"
                ]
             },
-            "softIdentifier":"simonmctester01111987"
+            "generatedIdentifier":"simonmctester01111987"
          }
       ]
    }

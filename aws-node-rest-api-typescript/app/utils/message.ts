@@ -20,7 +20,7 @@ class Result {
   /**
    * Serverless: According to the API Gateway specs, the body content must be stringified
    */
-  bodyToString () {
+  bodyToString() {
     return {
       statusCode: this.statusCode,
       body: JSON.stringify({

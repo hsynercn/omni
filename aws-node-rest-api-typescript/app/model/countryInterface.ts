@@ -13,12 +13,12 @@ export interface Country {
   demonym: string;
   area: number;
   gini: number;
-  timezones: (string)[] | null;
+  timezones: string[];
   borders?: (string)[] | null;
   nativeName: string;
   numericCode: string;
-  currencies: (CurrenciesEntity)[] | null;
-  languages: (LanguagesEntity)[] | null;
+  currencies: CurrenciesEntity[];
+  languages: LanguagesEntity[];
   translations: Translations;
   flag: string;
   regionalBlocs?: (RegionalBlocsEntity)[] | null;

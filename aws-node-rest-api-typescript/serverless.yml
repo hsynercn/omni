@@ -23,6 +23,7 @@ functions:
     handler: app/handler.getCountyData
     environment:
       ADDITIONAL_IDENTIFIER_REGIONS: "Asia Europe"
+      REST_COUNTRIES: https://restcountries.eu/rest/v2
     events:
       - http:
           path: getCountyData

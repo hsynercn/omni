@@ -10,13 +10,13 @@ import { Employee } from './model/employee';
 import { ObjectListValidator } from './utils/inputvalidator';
 const countryController = new CountryController();
 
-export const getCountyData: Handler = (event: Employee[]) => {
+export const getCountyData = (event: Employee[]) => {
 
   if (!ObjectListValidator.isValidInput(event)) {
     return new Promise(function (resolve) {
       resolve({ statusCode: 400, body: "Invalid input object, required format is an object list" });
     });
   }
-  console.log("VALID INPUT");
+
   return countryController.findByCodeList(event);
 }

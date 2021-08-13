@@ -4,7 +4,7 @@ I created this basic REST API with Typescript on AWS Lambda using Serverless fra
 
 ## getCountyData
 
-Current design provides single API method which expects an employee list(1 to n) as input and returns same list with expanded elements(for valid country codes). API has a minimum input format expectation for employees, firt of all AWS handler should receive an object list and each element should have below fields as string type. Invalid object lists cause 400 resposes. 
+Current design provides single API method which expects an employee list(1 to n) as input and returns same list with expanded elements(for valid country codes). API has a minimum input format expectation for employees, firt of all AWS handler should receive an object list and each element should have below fields as string type. 
 
 ```json
 [
@@ -27,6 +27,8 @@ External REST Countries API root URL is stored on serverless.yml as environment 
 Unit tests are covering most of the code, current package.json runs 'npm test' with nyc to display coverages.
 I didn't add integration tests, current unit test suite external dependencies are all mocked.
 
+Amazon Cognito user pools mey be used for authentication. 
+There is a external API integration on this service, with a microservice centric approach using a circuit breaker can increase stability.  
 
 Response is a simple JSON object with a status code and stringfied body. Countries API's country specific information is grouped under employeeCountry object. Optional generated ID is returned with generatedIdentifier.
 

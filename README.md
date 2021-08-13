@@ -4,7 +4,7 @@ I created this basic REST API with Typescript on AWS Lambda using Serverless fra
 
 ## getCountyData
 
-Current design provides single API method which expects an employee list(1 to n) as input and return same list with expanded elements. API has a minimum input format expectation for employees, firt of all AWS handler should receive an object list and each element should have below fields as string.
+Current design provides single API method which expects an employee list(1 to n) as input and returns same list with expanded elements(for valid country codes). API has a minimum input format expectation for employees, firt of all AWS handler should receive an object list and each element should have below fields as string type.
 
 ```json
 [
@@ -16,5 +16,9 @@ Current design provides single API method which expects an employee list(1 to n)
    }
 ]
 ```
-REST Countries API has a list of codes endpoint which returns a object list via supplied ISO 3166-1 2-letter or 3-letter country code list. This endpoint constructs the response only from valid county codes, any other meaningles codes are ignored. List of codes endpoint returns an error if there is no valid code in supplied country code list. Same approach is applied to backend API endpoint.  
+External REST Countries API has a list of codes endpoint which returns a object list via supplied ISO 3166-1 2-letter or 3-letter country code list. Countries API endpoint constructs the response from valid county codes, other meaningles codes cause nulls. List of codes endpoint only returns an error if there is no valid code in supplied country code list. 
+
+https://restcountries.eu/rest/v2/alpha?codes=col;no;ee;fffff;dddddd;
+
+Same approach is applied to backend API endpoint getCountyData. Firstly country codes are extracted from employee list to a hash set and from hash set ';' seperated REST Countries URL is constructed. REST Countries does't return duplicated countries for duplicated ISO codes but we shouldn't expand URL unnecessarily. For valid country codes fetched data is reflected to employee object. Employee object with invalid ISO country codes are returned as is.
 

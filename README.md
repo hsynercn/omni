@@ -26,7 +26,7 @@ External REST Countries API root URL is stored on serverless.yml as environment 
 
 Unit tests are covering most of the code, current package.json runs 'npm test' with nyc to display coverages.
 
-Response is a simple JSON object with a status code and stringfied body. Method retursn 400 for invalid inputs/bad reuqests, 200 for successful requests. 
+Response is a simple JSON object with a status code and stringfied body. It retursn 400 for invalid inputs/bad reuqests, 200 for successful requests. 
 
 ```json
 {

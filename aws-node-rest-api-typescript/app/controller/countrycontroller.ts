@@ -18,27 +18,29 @@ export class CountryController {
 
       const fetchedCountryList = await this.countryService.getByCodeList(countryCodes);
 
+      const countryList = fetchedCountryList.filter(function (e) {return e != null;});
+
       let countryCodeMap = new Map();
 
-      fetchedCountryList.forEach(country => {
+      countryList.forEach(country => {
         countryCodeMap.set(country.alpha2Code, country);
         countryCodeMap.set(country.alpha3Code, country);
       });
 
       employeeList.forEach((employee) => {
-        if ("country" in employee) {
           let tmpCountry: Country = countryCodeMap.get(employee.country);
-          let emplCountry: EmployeeCountry = {
-            name: tmpCountry.name,
-            currencies: tmpCountry.currencies,
-            languages: tmpCountry.languages,
-            timezones: tmpCountry.timezones
-          };
-          employee.employeeCountry = emplCountry;
-          if (EmployeeUtil.isExtraIdRequired(tmpCountry.region)) {
-            employee.softIdentifier = EmployeeUtil.generateId(employee);
+          if(tmpCountry) {
+            let emplCountry: EmployeeCountry = {
+              name: tmpCountry.name,
+              currencies: tmpCountry.currencies,
+              languages: tmpCountry.languages,
+              timezones: tmpCountry.timezones
+            };
+            employee.employeeCountry = emplCountry;
+            if (EmployeeUtil.isExtraIdRequired(tmpCountry.region)) {
+              employee.generatedIdentifier = EmployeeUtil.generateId(employee);
+            }
           }
-        }
       });
 
       return MessageUtil.success(employeeList);

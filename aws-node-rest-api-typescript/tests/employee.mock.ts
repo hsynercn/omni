@@ -89,6 +89,15 @@ export const empMelissa: Employee = {
     country: "US"
 }
 
+export const empEmptyString: Employee = {
+    firstName: "",
+    lastName: "",
+    dateOfBirth: "",
+    jobTitle: "",
+    company: "",
+    country: ""
+}
+
 
 export const shortEmployeeList: Employee[] = [empSmallCase, empUpperCase, empSpecialChars, empSpecialCharMix];
 
@@ -97,3 +106,5 @@ export const emptyCntEmployeeList: Employee[] = [empSmallCase, empEmptyCountry];
 export const royLisaSimonEmployeeList: Employee[] = [empRoy, empLisa, empSimon];
 
 export const mixedIdEmployeeList: Employee[] = [empRoy, empSimon];
+
+export const emptyStringCountryEmployeeList: Employee[] = [empRoy, empSimon, empEmptyString];

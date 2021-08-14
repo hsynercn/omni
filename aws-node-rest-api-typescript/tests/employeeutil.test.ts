@@ -25,6 +25,7 @@ describe('EmployeeUtil', () => {
   describe('#isExtraIdRequired', () => {
 
     it('returns false for not given ADDITIONAL_IDENTIFIER_REGIONS', () => {
+      process.env.ADDITIONAL_IDENTIFIER_REGIONS = undefined;
       const result = EmployeeUtil.isExtraIdRequired("");
       expect(result).to.equal(false);
     });

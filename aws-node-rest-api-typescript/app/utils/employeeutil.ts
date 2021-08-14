@@ -18,12 +18,12 @@ export class EmployeeUtil {
     }
 
     static extractCountryCodes(employeeList: Employee[]) {
-        let countryCodes: string[] = [];
+        const mySet: Set<string> = new Set<string>();
         employeeList.forEach((employee) => {
             if (employee.hasOwnProperty("country")) {
-                countryCodes.push(employee.country);
+                mySet.add(employee.country);
             }
         });
-        return countryCodes;
+        return Array.from(mySet.values());;
     }
 }

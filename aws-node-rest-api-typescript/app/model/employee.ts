@@ -8,5 +8,5 @@ export interface Employee {
   company?: string;
   country: string;
   employeeCountry?: EmployeeCountry;
-  softIdentifier?: string;
+  generatedIdentifier?: string;
 }

@@ -1,7 +1,7 @@
-import { CountryController } from "../app/controller/countries";
-import { royLisaSimonEmployeeList,mixedIdEmployeeList } from "./employee.mock";
+import { CountryController } from "../app/controller/countrycontroller";
+import { royLisaSimonEmployeeList,mixedIdEmployeeList, emptyStringCountryEmployeeList } from "./employee.mock";
 import * as countriesMock from './countriesapi.mock';
-import { royLisaSimonResponse,mixedIDResponse } from "./message.mock";
+import { royLisaSimonResponse,mixedIDResponse, errorResponse, emptyStringCountryResponse } from "./message.mock";
 import { expect } from "chai";
 
 var axios = require("axios");
@@ -31,6 +31,26 @@ describe('CountryController', () => {
             let countryController: CountryController = new CountryController();
             let result = await countryController.findByCodeList(mixedIdEmployeeList);
             expect(result).to.eql(mixedIDResponse);
+        });
+
+        it('returns error for empty list', async () => {
+            process.env.REST_COUNTRIES = "";
+            process.env.ADDITIONAL_IDENTIFIER_REGIONS = "";
+            
+            let countryController: CountryController = new CountryController();
+            let result = await countryController.findByCodeList([]);
+            expect(result).to.eql(errorResponse);
+        });
+
+        it('returns unmodified employee for invalid coutnry code', async () => {
+            var mock = new MockAdapter(axios);
+            mock.onGet("/alpha?codes=US;IND;").reply(200, countriesMock.getUsInd);
+            process.env.REST_COUNTRIES = "";
+            process.env.ADDITIONAL_IDENTIFIER_REGIONS = "Asia";
+            
+            let countryController: CountryController = new CountryController();
+            let result = await countryController.findByCodeList(emptyStringCountryEmployeeList);
+            expect(result).to.eql(emptyStringCountryResponse);
         });
 
     });

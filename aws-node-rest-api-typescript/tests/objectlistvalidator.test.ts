@@ -1,5 +1,6 @@
 import { expect } from 'chai';
-import { ObjectListValidator } from '../app/utils/inputvalidator';
+import { ObjectListValidator } from '../app/utils/objectlistvalidator';
+import { empRoy } from './employee.mock';
 
 describe('ObjectListValidator', () => {
 
@@ -19,8 +20,18 @@ describe('ObjectListValidator', () => {
             expect(result).to.equal(false);
         });
 
+        it('returns false for empty array input', async () => {
+            let result = ObjectListValidator.isValidInput([])
+            expect(result).to.equal(false);
+        });
+
+        it('returns false for missing fields', async () => {
+            let result = ObjectListValidator.isValidInput([{firstName:"firstName"}])
+            expect(result).to.equal(false);
+        });
+
         it('returns true for array input', async () => {
-            let result = ObjectListValidator.isValidInput([{}, {}, {}])
+            let result = ObjectListValidator.isValidInput([empRoy, empRoy, empRoy])
             expect(result).to.equal(true);
         });
 

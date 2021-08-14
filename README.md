@@ -31,7 +31,7 @@ Unit tests are covering most of the code, current package.json runs 'npm test' w
 
 I didn't add integration tests, current unit test suite mocks all used REST Countries API endpoints. For a better development process we can add integration tests and apply quality gate policies like using SonarQube for minimum unit test coverage limit or code smell scoring.  
 
-Amazon Cognito user pools may be used for authentication. 
+Amazon Cognito user pools may be used for authentication, we can add API documentation with AWS API Gateway.   
 There is an external API integration on this service, circuit breaker pattern can increase our microservice stability.
 
 Response is a simple JSON object with a status code and stringfied body. Country information is grouped under employeeCountry object. Optional identifier is returned with generatedIdentifier. Be aware firstName, lastName and dateOfBirth are not reliable combination for unique id generation, we may need additional integration in this service for id uniqueness.

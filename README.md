@@ -16,7 +16,7 @@ Current design provides a single API endpoint which expects an employee list(1 t
    }
 ]
 ```
-External REST Countries API has a list of codes endpoint which returns an object list via supplied ISO 3166-1 2-letter or 3-letter country code list. Countries API list of codes endpoint is a good option for current scenario, bulk fetching eliminates HTTP overhead and extra memory usage. Countries API endpoint constructs the response from valid county codes, other invalid codes returned as nulls in response list. List of codes endpoint only returns an error if there is no valid code in the supplied country code list. CountryService class encapsulates the Countries API, current implementation provides country access with getAll, getByName, getByCode, getByCodeList methods. Only getByCodeList is used for current needs, for future requirementes this class can expand Countries API access(with required unit test additions).
+External REST Countries API has a list of codes endpoint which returns an object list via supplied ISO 3166-1 2-letter or 3-letter country code list. Countries API list of codes endpoint is a good option for current scenario, bulk fetching eliminates HTTP overhead and extra memory usage. Countries API endpoint constructs the response from valid county codes, other invalid codes returned as nulls in response list. List of codes endpoint only returns an error if there is no valid code in the supplied country code list. CountryService class encapsulates the Countries API; the current implementation provides country access with getAll, getByName, getByCode, getByCodeList methods. Only getByCodeList is used for current needs, for future requirements this class can expand Countries API access(with required unit test additions).
 
 Sample URL for REST Countries API behavior demonstration:
 https://restcountries.eu/rest/v2/alpha?codes=col;no;ee;fffff;dddddd;
@@ -34,7 +34,7 @@ I didn't add integration tests, current unit test suite mocks all used REST Coun
 Amazon Cognito user pools may be used for authentication. 
 There is an external API integration on this service, circuit breaker pattern can increase our microservice stability.
 
-Response is a simple JSON object with a status code and stringfied body. Country information is grouped under employeeCountry object. Optional identifier is returned with generatedIdentifier. Be awera firstName, lastName and dateOfBirth are not reliable combination for unique id generation, we may need additional integration in this service for id uniqueness.
+Response is a simple JSON object with a status code and stringfied body. Country information is grouped under employeeCountry object. Optional identifier is returned with generatedIdentifier. Be aware firstName, lastName and dateOfBirth are not reliable combination for unique id generation, we may need additional integration in this service for id uniqueness.
 
 ```json
 {
@@ -122,5 +122,7 @@ Response is a simple JSON object with a status code and stringfied body. Country
    }
 }
 ```
+
+
 
 

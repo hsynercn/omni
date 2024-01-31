@@ -1,0 +1,392 @@
+repo_name: hsynercn/omni
+report_id: 7085c37f7a5d0105e13ffd9f1ac1a90e
+version: 0.1
+repo_type: Public
+timestamp: '2024-01-31T10:51:56+00:00'
+requested_by: hsynercn
+provider: github
+branch: main
+detected_tools_count: 29
+tools:
+- name: JavaScript
+  description: Lightweight, interpreted, object-oriented language with first-class
+    functions
+  website_url: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1209/javascript.jpeg
+  detection_source_url: https://github.com/hsynercn/omni/blob/main/aws-node-rest-api-typescript/package.json
+  detection_source: aws-node-rest-api-typescript/package.json
+  last_updated_by: hsynercn
+  last_updated_on: 2021-08-12 21:59:49.000000000 Z
+- name: TypeScript
+  description: A superset of JavaScript that compiles to clean JavaScript output
+  website_url: http://www.typescriptlang.org
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1612/bynNY5dJ.jpg
+  detection_source_url: https://github.com/hsynercn/omni
+  detection_source: Repo Metadata
+- name: Node.js
+  description: A platform built on Chrome's JavaScript runtime for easily building
+    fast, scalable network applications
+  website_url: http://nodejs.org/
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Frameworks (Full Stack)
+  image_url: https://img.stackshare.io/service/1011/n1JRsFeB_400x400.png
+  detection_source_url: https://github.com/hsynercn/omni/blob/main/aws-node-rest-api-typescript/package.json
+  detection_source: aws-node-rest-api-typescript/package.json
+  last_updated_by: hsynercn
+  last_updated_on: 2021-08-12 21:59:49.000000000 Z
+- name: Chai
+  description: A BDD / TDD assertion library
+  website_url: http://chaijs.com/
+  version: 4.2.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Javascript Testing Framework
+  image_url: https://img.stackshare.io/service/1725/chai.png
+  detection_source_url: https://github.com/hsynercn/omni/blob/main/aws-node-rest-api-typescript/package.json
+  detection_source: aws-node-rest-api-typescript/package.json
+  last_updated_by: hsynercn
+  last_updated_on: 2021-08-12 21:59:49.000000000 Z
+- name: Dotenv
+  description: Loads environment variables from .env for Nodejs projects
+  website_url: https://github.com/motdotla/dotenv
+  license: BSD-2-Clause
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Server Configuration and Automation
+  image_url: https://img.stackshare.io/service/8067/default_90dcb1286af7685c68df319c764b80704df1155b.png
+  detection_source_url: https://github.com/hsynercn/omni/blob/main/aws-node-rest-api-typescript/package.json
+  detection_source: aws-node-rest-api-typescript/package.json
+  last_updated_by: hsynercn
+  last_updated_on: 2021-08-14 07:47:15.000000000 Z
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/hsynercn/omni
+  detection_source: Repo Metadata
+- name: Istanbul
+  description: A JS code coverage tool written in JS
+  website_url: http://gotwarlost.github.io/istanbul/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Code Coverage
+  image_url: https://img.stackshare.io/service/2105/default_78659c552327b8ff3592c2aa1694ea92c974a8d5.png
+  detection_source_url: https://github.com/hsynercn/omni/blob/main/aws-node-rest-api-typescript/package.json
+  detection_source: aws-node-rest-api-typescript/package.json
+  last_updated_by: hsynercn
+  last_updated_on: 2021-08-12 21:59:49.000000000 Z
+- name: Mocha
+  description: Simple, flexible, fun javascript test framework for node.js &amp; the
+    browser
+  website_url: http://mochajs.org/
+  version: 7.1.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Javascript Testing Framework
+  image_url: https://img.stackshare.io/service/832/mocha.png
+  detection_source_url: https://github.com/hsynercn/omni/blob/main/aws-node-rest-api-typescript/package.json
+  detection_source: aws-node-rest-api-typescript/package.json
+  last_updated_by: hsynercn
+  last_updated_on: 2021-08-14 07:47:15.000000000 Z
+- name: SinonJS
+  description: Standalone test spies, stubs and mocks for JavaScript
+  website_url: http://sinonjs.org/
+  version: 9.0.2
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Javascript Testing Framework
+  image_url: https://img.stackshare.io/service/3509/logo.png
+  detection_source_url: https://github.com/hsynercn/omni/blob/main/aws-node-rest-api-typescript/package.json
+  detection_source: aws-node-rest-api-typescript/package.json
+  last_updated_by: hsynercn
+  last_updated_on: 2021-08-12 21:59:49.000000000 Z
+- name: SuperTest
+  description: 'A library for testing node.js HTTP servers '
+  website_url: https://www.npmjs.com/package/supertest
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Javascript Testing Framework
+  image_url: https://img.stackshare.io/no-img-open-source.png
+  detection_source_url: https://github.com/hsynercn/omni/blob/main/aws-node-rest-api-typescript/package.json
+  detection_source: aws-node-rest-api-typescript/package.json
+  last_updated_by: hsynercn
+  last_updated_on: 2021-08-12 21:59:49.000000000 Z
+- name: TSLint
+  description: An extensible linter for the TypeScript language
+  website_url: https://github.com/palantir/tslint
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Code Review
+  image_url: https://img.stackshare.io/service/5561/303157.png
+  detection_source_url: https://github.com/hsynercn/omni/blob/main/aws-node-rest-api-typescript/package.json
+  detection_source: aws-node-rest-api-typescript/package.json
+  last_updated_by: hsynercn
+  last_updated_on: 2021-08-12 21:59:49.000000000 Z
+- name: npm
+  description: The package manager for JavaScript.
+  website_url: https://www.npmjs.com/
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Front End Package Manager
+  image_url: https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png
+  detection_source_url: https://github.com/hsynercn/omni/blob/main/aws-node-rest-api-typescript/package.json
+  detection_source: aws-node-rest-api-typescript/package.json
+  last_updated_by: hsynercn
+  last_updated_on: 2021-08-12 21:59:49.000000000 Z
+- name: AWS Lambda
+  description: Automatically run code in response to modifications to objects in Amazon
+    S3 buckets, messages in Kinesis streams, or updates in DynamoDB
+  website_url: http://aws.amazon.com/lambda
+  open_source: false
+  hosted_saas: true
+  category: Application Hosting
+  sub_category: Serverless / Task Processing
+  image_url: https://img.stackshare.io/service/1909/aws-lambda.png
+  detection_source_url: https://github.com/hsynercn/omni/blob/main/aws-node-rest-api-typescript/package.json
+  detection_source: aws-node-rest-api-typescript/package.json
+  last_updated_by: hsynercn
+  last_updated_on: 2021-08-12 21:59:49.000000000 Z
+- name: Serverless
+  description: The most widely-adopted toolkit for building serverless applications
+  website_url: https://github.com/serverless/serverless
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Application Hosting
+  sub_category: Serverless / Task Processing
+  image_url: https://img.stackshare.io/service/5095/serverless-logo.png
+  detection_source_url: https://github.com/hsynercn/omni/blob/main/aws-node-rest-api-typescript/package.json
+  detection_source: aws-node-rest-api-typescript/package.json
+  last_updated_by: hsynercn
+  last_updated_on: 2021-08-14 07:47:15.000000000 Z
+- name: axios
+  description: Promise based HTTP client for the browser and node.js
+  website_url: https://github.com/mzabriskie/axios
+  version: 0.21.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Javascript Utilities & Libraries
+  image_url: https://img.stackshare.io/no-img-open-source.png
+  detection_source_url: https://github.com/hsynercn/omni/blob/main/aws-node-rest-api-typescript/package.json
+  detection_source: aws-node-rest-api-typescript/package.json
+  last_updated_by: hsynercn
+  last_updated_on: 2021-08-13 19:11:53.000000000 Z
+- name: lambda-tester
+  website_url: https://github.com/vandium-io/lambda-tester
+  open_source: false
+  hosted_saas: false
+  image_url: https://img.stackshare.io/service/4918/14281817.png
+  detection_source_url: https://github.com/hsynercn/omni/blob/main/aws-node-rest-api-typescript/package.json
+  detection_source: aws-node-rest-api-typescript/package.json
+  last_updated_by: hsynercn
+  last_updated_on: 2021-08-14 07:47:15.000000000 Z
+- name: "@types/aws-lambda"
+  description: TypeScript definitions for AWS Lambda
+  package_url: https://www.npmjs.com/@types/aws-lambda
+  version: 8.10.51
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/17868/default_b760b4f955878b0055c02bde0608c2f01e7d4f4f.png
+  detection_source_url: https://github.com/hsynercn/omni/blob/main/aws-node-rest-api-typescript/package.json
+  detection_source: aws-node-rest-api-typescript/package.json
+  last_updated_by: hsynercn
+  last_updated_on: 2021-08-12 21:59:49.000000000 Z
+- name: "@types/chai"
+  description: TypeScript definitions for chai
+  package_url: https://www.npmjs.com/@types/chai
+  version: 4.2.11
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15922/default_e0a4fb1126d7400f419f0931cf1669947a5bc552.png
+  detection_source_url: https://github.com/hsynercn/omni/blob/main/aws-node-rest-api-typescript/package.json
+  detection_source: aws-node-rest-api-typescript/package.json
+  last_updated_by: hsynercn
+  last_updated_on: 2021-08-12 21:59:49.000000000 Z
+- name: "@types/mocha"
+  description: TypeScript definitions for mocha
+  package_url: https://www.npmjs.com/@types/mocha
+  version: 7.0.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15893/default_1d65e37e65b7f80761374f0202776043277d505d.png
+  detection_source_url: https://github.com/hsynercn/omni/blob/main/aws-node-rest-api-typescript/package.json
+  detection_source: aws-node-rest-api-typescript/package.json
+  last_updated_by: hsynercn
+  last_updated_on: 2021-08-14 07:47:15.000000000 Z
+- name: "@types/mongoose"
+  description: TypeScript definitions for Mongoose
+  package_url: https://www.npmjs.com/@types/mongoose
+  version: 5.7.14
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16898/default_884deeafc4d4b680b6d9cb7e3759ba2db025e8e7.png
+  detection_source_url: https://github.com/hsynercn/omni/blob/main/aws-node-rest-api-typescript/package.json
+  detection_source: aws-node-rest-api-typescript/package.json
+  last_updated_by: hsynercn
+  last_updated_on: 2021-08-12 21:59:49.000000000 Z
+- name: "@types/node"
+  description: TypeScript definitions for Node.js
+  package_url: https://www.npmjs.com/@types/node
+  version: 16.4.14
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15809/default_5e5e8ac63beda29f31f1844df64d4b8247570a66.png
+  detection_source_url: https://github.com/hsynercn/omni/blob/main/aws-node-rest-api-typescript/package.json
+  detection_source: aws-node-rest-api-typescript/package.json
+  last_updated_by: hsynercn
+  last_updated_on: 2021-08-14 07:47:15.000000000 Z
+- name: "@types/sinon"
+  description: TypeScript definitions for Sinon
+  package_url: https://www.npmjs.com/@types/sinon
+  version: 9.0.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16151/default_ac04a744873b460c4ef30a7450ed0c83223640ab.png
+  detection_source_url: https://github.com/hsynercn/omni/blob/main/aws-node-rest-api-typescript/package.json
+  detection_source: aws-node-rest-api-typescript/package.json
+  last_updated_by: hsynercn
+  last_updated_on: 2021-08-12 21:59:49.000000000 Z
+- name: "@types/supertest"
+  description: TypeScript definitions for SuperTest
+  package_url: https://www.npmjs.com/@types/supertest
+  version: 2.0.8
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16805/default_31a4e0e11d348225088320f3a5c5ea6fa49c27ad.png
+  detection_source_url: https://github.com/hsynercn/omni/blob/main/aws-node-rest-api-typescript/package.json
+  detection_source: aws-node-rest-api-typescript/package.json
+  last_updated_by: hsynercn
+  last_updated_on: 2021-08-14 07:47:15.000000000 Z
+- name: aws-sdk
+  description: AWS SDK for JavaScript
+  package_url: https://www.npmjs.com/aws-sdk
+  version: 2.966.0
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16018/default_7a88bebb451873cc63bd99007de5bd3bb8ef85de.png
+  detection_source_url: https://github.com/hsynercn/omni/blob/main/aws-node-rest-api-typescript/package.json
+  detection_source: aws-node-rest-api-typescript/package.json
+  last_updated_by: hsynercn
+  last_updated_on: 2021-08-12 21:59:49.000000000 Z
+- name: axios-mock-adapter
+  description: Axios adapter that allows to easily mock requests
+  package_url: https://www.npmjs.com/axios-mock-adapter
+  version: 1.19.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/17391/default_e9c4b89784d4fe5d59f93b4a54dd8910ea23e5de.png
+  detection_source_url: https://github.com/hsynercn/omni/blob/main/aws-node-rest-api-typescript/package.json
+  detection_source: aws-node-rest-api-typescript/package.json
+  last_updated_by: hsynercn
+  last_updated_on: 2021-08-13 19:11:53.000000000 Z
+- name: cross-env
+  description: Run scripts that set and use environment variables across platforms
+  package_url: https://www.npmjs.com/cross-env
+  version: 7.0.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15828/default_14fd11531839d935f920b6d55bd6f3528c890ad7.png
+  detection_source_url: https://github.com/hsynercn/omni/blob/main/aws-node-rest-api-typescript/package.json
+  detection_source: aws-node-rest-api-typescript/package.json
+  last_updated_by: hsynercn
+  last_updated_on: 2021-08-14 07:47:15.000000000 Z
+- name: nyc
+  description: The Istanbul command line interface
+  package_url: https://www.npmjs.com/nyc
+  version: 15.1.0
+  license: ISC
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15837/default_1d65e37e65b7f80761374f0202776043277d505d.png
+  detection_source_url: https://github.com/hsynercn/omni/blob/main/aws-node-rest-api-typescript/package.json
+  detection_source: aws-node-rest-api-typescript/package.json
+  last_updated_by: hsynercn
+  last_updated_on: 2021-08-12 21:59:49.000000000 Z
+- name: ts-node
+  description: TypeScript execution environment and REPL for node.js
+  package_url: https://www.npmjs.com/ts-node
+  version: 8.9.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15830/default_6743ba96cf149a3c3c68a185199f9705d6eff80e.png
+  detection_source_url: https://github.com/hsynercn/omni/blob/main/aws-node-rest-api-typescript/package.json
+  detection_source: aws-node-rest-api-typescript/package.json
+  last_updated_by: hsynercn
+  last_updated_on: 2021-08-14 07:47:15.000000000 Z
+- name: tslint-config-airbnb
+  description: A TSLint config for Airbnb JavaScript Style
+  package_url: https://www.npmjs.com/tslint-config-airbnb
+  version: 5.11.2
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16394/default_92302d1bbf4c0f67b862869662b4f69002c94aad.png
+  detection_source_url: https://github.com/hsynercn/omni/blob/main/aws-node-rest-api-typescript/package.json
+  detection_source: aws-node-rest-api-typescript/package.json
+  last_updated_by: hsynercn
+  last_updated_on: 2021-08-12 21:59:49.000000000 Z
